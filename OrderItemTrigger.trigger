@@ -1,6 +1,6 @@
-trigger OrderTrigger on Order (after insert, after delete, after update ) {
+trigger OrderItemTrigger on OrderItem (after insert, after delete, after update ) {
 
-    OrderTriggerHandler handler = new OrderTriggerHandler(
+    OrderItemTriggerHandler handler = new OrderItemTriggerHandler(
         Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap
     );
 
@@ -15,6 +15,4 @@ trigger OrderTrigger on Order (after insert, after delete, after update ) {
             handler.afterDelete();
         }
     }
-}
-
 }
