@@ -15,3 +15,10 @@ Verify when:
 - New Order Item (INSERT) ➕
 - Removed Order Item (DELETE) ➖
 - Changes in Items Price (UPDATE) ❕
+
+# About Triggers
+
+- O Trigger is a Apex script on SalesForce. 
+- Syntax: trigger triggerName on SObject (parameters); 
+- Anytime one of the operations events defined in the paramters (example: before/after insert/update/delete) happens to the object (SObject) the trigger code is executed. 
+- My Trigger method is used to call the Trigger Handler, it manages the flow for each operarion, calling the methods defined in the Helper, where the business rules are defined. This development mode is used to attend the best practices related to Logical Trigger.  
